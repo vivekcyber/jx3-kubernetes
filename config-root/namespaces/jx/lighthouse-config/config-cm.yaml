@@ -45,7 +45,7 @@ data:
         repos:
         - vivekcyber/jx3-kubernetes
         - vivekcyber/quickstart_python
-      target_url: http://dashboard-jx.jx.docure.ai
+      target_url: http://dashboard-jx.
 kind: ConfigMap
 metadata:
   creationTimestamp: null

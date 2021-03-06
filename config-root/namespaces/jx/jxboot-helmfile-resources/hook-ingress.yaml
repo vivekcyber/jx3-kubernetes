@@ -16,8 +16,8 @@ spec:
               serviceName: hook
               servicePort: 80
             path: "/hook"
-      host: hook-jx.jx.docure.ai
+      host: hook-jx.change.me
   tls:
     - hosts:
-        - hook-jx.jx.docure.ai
-      secretName: "tls-jx-docure-ai-s"
+        - hook-jx.change.me
+      secretName: "tls-change-me-s"

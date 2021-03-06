@@ -17,13 +17,13 @@ metadata:
   namespace: jx
 spec:
   rules:
-    - host: dashboard-jx.jx.docure.ai
+    - host: dashboard-jx.change.me
       http:
         paths:
           - backend:
               serviceName: jx-pipelines-visualizer
               servicePort: http
   tls:
-    - secretName: tls-jx-docure-ai-s
+    - secretName: tls-change-me-s
       hosts:
-        - dashboard-jx.jx.docure.ai
+        - dashboard-jx.change.me

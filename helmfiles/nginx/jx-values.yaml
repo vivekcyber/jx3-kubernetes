@@ -37,7 +37,7 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
-    domain: jx.docure.ai
+    domain: change.me
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -nginx.

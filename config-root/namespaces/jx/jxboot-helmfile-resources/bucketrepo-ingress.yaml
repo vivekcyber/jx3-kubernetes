@@ -16,8 +16,8 @@ spec:
               serviceName: bucketrepo
               servicePort: 80
             path: "/"
-      host: bucketrepo-jx.jx.docure.ai
+      host: bucketrepo-jx.change.me
   tls:
     - hosts:
-        - bucketrepo-jx.jx.docure.ai
-      secretName: "tls-jx-docure-ai-s"
+        - bucketrepo-jx.change.me
+      secretName: "tls-change-me-s"
