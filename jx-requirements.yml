@@ -6,7 +6,7 @@ spec:
     schedule: ""
   cluster:
     chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
-    clusterName: kind
+    clusterName: kubernetes-the-hard-way
     devEnvApprovers:
     - todo
     environmentGitOwner: todo
@@ -20,7 +20,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: "jx.test.ai"
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
