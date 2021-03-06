@@ -22,7 +22,7 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: jx.docure.ai
+    domain: ""
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -jx.
