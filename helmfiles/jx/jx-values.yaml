@@ -21,7 +21,7 @@ jxRequirements:
     schedule: ""
   cluster:
     chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts
-    clusterName: kind
+    clusterName: kubernetes-the-hard-way
     devEnvApprovers:
     - todo
     environmentGitOwner: todo
@@ -29,20 +29,24 @@ jxRequirements:
     gitName: github
     gitServer: https://github.com
     provider: kubernetes
-    registry: ghcr.io
+    registry: trow.kube-public:31000
   environments:
   - key: dev
+    owner: vivekcyber
+    repository: jx3-kubernetes
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: jx.docure.ai
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
-      enabled: false
+      enabled: true
       production: false
+  pipelineUser:
+    username: vivekcyber
   repository: bucketrepo
   secretStorage: local
   vault: {}
@@ -50,7 +54,7 @@ jxRequirements:
 jxRequirementsIngressExternalDNS:
   enabled: false
 jxRequirementsIngressTLS:
-  enabled: false
+  enabled: true
 jxRequirementsKuberhealthy:
   enabled: false
 jxRequirementsTLSCheck:

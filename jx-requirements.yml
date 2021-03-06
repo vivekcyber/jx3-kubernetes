@@ -17,16 +17,21 @@ spec:
     registry: trow.kube-public:31000
   environments:
   - key: dev
+    owner: vivekcyber
+    repository: jx3-kubernetes
   - key: staging
   - key: production
   ingress:
-    domain: "jx.docure.ai"
+    domain: jx.docure.ai
     externalDNS: false
+    kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: true
       production: false
+  pipelineUser:
+    username: vivekcyber
   repository: bucketrepo
   secretStorage: local
   vault: {}
