@@ -14,18 +14,18 @@ spec:
     gitName: github
     gitServer: https://github.com
     provider: kubernetes
-    registry: ghcr.io
+    registry: trow.kube-public:31000
   environments:
   - key: dev
   - key: staging
   - key: production
   ingress:
-    domain: "jx.test.ai"
+    domain: "jx.docure.ai"
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
       email: ""
-      enabled: false
+      enabled: true
       production: false
   repository: bucketrepo
   secretStorage: local
